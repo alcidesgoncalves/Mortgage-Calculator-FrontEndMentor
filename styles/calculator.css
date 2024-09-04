@@ -1,0 +1,113 @@
+#£ {
+    left: 0px;
+    border-radius: 2px;
+}
+   
+#years {
+    right: 50px;
+    border-radius: 2px;
+}
+   
+#percentage {
+    right: 50px;
+    border-radius: 2px;
+}
+
+.head-container {
+    padding: 1.45rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+.main-title {
+    color: var(--Slate900);
+}
+
+.clear-btn {
+    color: var(--Slate300);
+    text-decoration: underline;
+}
+
+form {
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--Slate700);
+    font-family: 'Plus Jakarta Sans Medium', sans-serif;
+    font-size: .95rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.65rem;
+}
+
+.input-container {
+   margin-top: .75rem;
+   position: relative;   
+}
+
+.input-container span {
+    position: absolute;
+    color: var(--Slate500);
+    font-family:'Plus Jakarta Sans Bold', sans-serif; ;
+    background-color: var(--Slate100);
+    padding: .45rem .45rem;
+    border-radius: 3px;
+}
+
+.input-container input {
+    padding: .55rem;
+    width: 80%;
+    border-radius: 2px;
+    border: solid var(--Slate300) 1px;
+}
+
+.mortgage-type-container {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+}
+
+.mortgage-type-btn {
+    width: 80%;
+    background-color: var(--White);
+    border: solid 0.5px var(--Slate500);
+    padding: .65rem;
+}
+
+.button-container {
+   width: 100%;
+}
+
+.repayment-btn {
+    background-color: var(--Lime);
+    color: var(--Slate900);
+    font-family:'Plus Jakarta Sans Bold', sans-serif; 
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    padding: 0.65rem 1.65rem;
+}
