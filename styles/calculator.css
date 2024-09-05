@@ -1,20 +1,5 @@
-#£ {
-    left: 0px;
-    border-radius: 2px;
-}
-   
-#years {
-    right: 50px;
-    border-radius: 2px;
-}
-   
-#percentage {
-    right: 50px;
-    border-radius: 2px;
-}
-
 .head-container {
-    padding: 1.45rem 1rem;
+    padding: 1.15rem 1rem;
     display: flex;
     flex-direction: column;
     gap: .45rem;
@@ -44,7 +29,9 @@ label {
 .form-group {
     display: flex;
     flex-direction: column;
-    padding: 1rem 0.65rem;
+    padding: 1rem 0;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .input-container {
@@ -62,8 +49,8 @@ label {
 }
 
 .input-container input {
-    padding: .55rem;
-    width: 80%;
+    padding: .75rem;
+    width: 94%;
     border-radius: 2px;
     border: solid var(--Slate300) 1px;
 }
@@ -77,8 +64,8 @@ label {
 }
 
 .circle {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 1px solid #000000;
   background-color: rgb(255, 255, 255);
@@ -88,14 +75,19 @@ label {
 }
 
 .mortgage-type-btn {
-    width: 80%;
     background-color: var(--White);
     border: solid 0.5px var(--Slate500);
     padding: .65rem;
+    font-family:'Plus Jakarta Sans Bold', sans-serif; 
+}
+
+.mortgage-type-btn span {
+    margin-right: .25rem;
 }
 
 .button-container {
    width: 100%;
+   padding: 0 0 1rem 0;
 }
 
 .repayment-btn {
