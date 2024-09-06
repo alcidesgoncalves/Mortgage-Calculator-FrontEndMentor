@@ -19,7 +19,7 @@
         <div class="form-group">
           <label for="mortgage-amount">Mortgage Amount</label>
           <div class="input-container">
-            <!-- <span id="£">£</span> -->
+            <span class="unit">£</span>
             <input type="number" id="mortgage-amount" name="mortgage-amount">
           </div>
         </div>
@@ -28,7 +28,7 @@
           <label for="mortgage-term">Mortgage Term</label>
           <div class="input-container">
             <input type="number" id="mortgage-term" name="mortgage-term">
-            <!-- <span id="years">years</span> -->
+            <span class="unit term"">years</span>
           </div>
         </div>
 
@@ -36,7 +36,7 @@
           <label for="interest-rate">Interest Rate</label>
           <div class="input-container">
             <input type="number" id="interest-rate" name="interest-rate">
-            <!-- <span id="percentage">%</span> -->
+            <span class="unit rate">%</span>
           </div>
         </div>
 
@@ -61,20 +61,43 @@
           </button>
         </div>
       </form>
-
-      <div class="result-container">
-        <div class="result-initial">
-          <img src="/assets/images/illustration-empty.svg" alt="bills">
-        </div>
+    </div>
+    <div class="result-container">
+      <div class="result-initial">
+        <img src="/assets/images/illustration-empty.svg" alt="bills">
+      </div>
+    
+      <div class="text-container">
+        <h2>Results shown here</h2>
+        <p>
+          Complete the form and click "calculate repayments" to see
+          what your monthly repayments would be.
+        </p>
+      </div>
+    
+      <div class="result-active" style="display: none;">
         <div class="text-container">
-          <h2>Results shown here</h2>
+          <h2>Your results</h2>
           <p>
-            Complete the form and click "calculate repayments" to see
-            what your monthly repayments would be.
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click "calculate repayments"
+            again.
           </p>
         </div>
+    
+        <div class="main-result" style="display: none;">
+          <div class="monthly-result">
+            <p>Your monthly repayments</p>
+            <span></span>
+          </div>
+          <hr>
+          <div class="repay-result">
+            <p>Total you'll repay over the term</p>
+            <span></span>
+          </div>
+        </div>
       </div>
-    </div>
+    </div> 
   </div>
 </body>
 </html>
