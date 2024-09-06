@@ -10,57 +10,70 @@
 <body>
   <div class="container">  
     <div class="calculator-container">
+      <div class="head-container">
+        <h2 class="main-title">Mortgage Calculator</h2>
+        <p class="clear-btn">Clear All</p>
+      </div>
 
-        <div class="head-container">
-          <h2 class="main-title">Mortgage Calculator</h2>
-          <p class="clear-btn">Clear All</p>
+      <form action="">
+        <div class="form-group">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <div class="input-container">
+            <!-- <span id="£">£</span> -->
+            <input type="number" id="mortgage-amount" name="mortgage-amount">
+          </div>
         </div>
 
-        <form action="">
-          <div class="form-group">
-              <label for="mortgage-amount">Mortgage Amount</label>
-              <div class="input-container">
-                <!-- <span id="£">£</span> -->
-                <input type="number" id="mortgage-amount" name="mortgage-amount">
-              </div>
+        <div class="form-group">
+          <label for="mortgage-term">Mortgage Term</label>
+          <div class="input-container">
+            <input type="number" id="mortgage-term" name="mortgage-term">
+            <!-- <span id="years">years</span> -->
           </div>
-      
-          <div class="form-group">
-              <label for="mortgage-term">Mortgage Term</label>
-              <div class="input-container">
-                <input type="number" id="mortgage-term" name="mortgage-term">
-                <!-- <span id="years">years</span> -->
-              </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest-rate">Interest Rate</label>
+          <div class="input-container">
+            <input type="number" id="interest-rate" name="interest-rate">
+            <!-- <span id="percentage">%</span> -->
           </div>
-      
-          <div class="form-group">
-              <label for="interest-rate">Interest Rate</label>
-              <div class="input-container">
-                <input type="number" id="interest-rate" name="interest-rate">
-                <!-- <span id="percentage">%</span> -->
-              </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mortgage-type">Mortgage Type</label>
+          <div class="mortgage-type-container">
+            <a class="mortgage-type-btn">
+              <span class="circle"></span>
+              Repayment
+            </a>
+            <a class="mortgage-type-btn">
+              <span class="circle"></span>
+              Interest Only
+            </a>
           </div>
-          
-          <div class="form-group">
-            <label for="mortgage-type">Mortgage Type</label>
-            <div class="mortgage-type-container">
-              <a class="mortgage-type-btn">
-                <span class="circle"></span>
-                Repayment
-              </a>
-              <a class="mortgage-type-btn">
-                <span class="circle"></span>
-                Interest Only
-              </a>
-            </div>
-          </div>  
-          <div class="button-container">
-            <button class="repayment-btn"> 
-              <img class="icon" src="assets/images/icon-calculator.svg" alt="calculator-icon">
-              Calculate Repayments
-            </button>
-          </div>  
+        </div>
+
+        <div class="button-container">
+          <button class="repayment-btn"> 
+            <img class="icon" src="assets/images/icon-calculator.svg" alt="calculator-icon">
+            Calculate Repayments
+          </button>
+        </div>
       </form>
+
+      <div class="result-container">
+        <div class="result-initial">
+          <img src="/assets/images/illustration-empty.svg" alt="bills">
+        </div>
+        <div class="text-container">
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click "calculate repayments" to see
+            what your monthly repayments would be.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
