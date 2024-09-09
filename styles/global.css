@@ -35,5 +35,5 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 40vh;
+    min-height: 50vh;
 }

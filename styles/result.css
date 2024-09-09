@@ -1,7 +1,7 @@
-.result-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.image-hero {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .text-container {
@@ -16,4 +16,67 @@
     margin-top: .75rem;
     color: var(--Slate300);
     padding: 0 .85rem;
+}
+
+.text-container-active {
+    margin-top: 2em;
+    padding: 0 1rem;
+}
+
+.text-container-active h2 {
+    color: var(--White);
+    margin-bottom: .75rem;
+}
+
+.text-container-active p {
+    color: var(--Slate300);
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+}
+
+.main-result {
+    background-color: var(--Slate1000);
+    border-radius: 16px;
+    padding: 1em;
+    position: relative;
+    width: 85%;
+    margin: auto;
+}
+
+.main-result::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--Lime);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.monthly-result p,
+.repay-result p {
+    color: var(--Slate500);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+.monthly-result span {
+    color: var(--Lime);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.repay-result span {
+    color: white;
+    font-size: 2rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--Slate500);
+    margin: 1em 0;
 }

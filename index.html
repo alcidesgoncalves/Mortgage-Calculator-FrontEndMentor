@@ -61,20 +61,21 @@
       </form>
     </div>
     <div class="result-container">
-      <div class="result-initial">
-        <img src="/assets/images/illustration-empty.svg" alt="bills">
-      </div>
-    
-      <div class="text-container">
-        <h2>Results shown here</h2>
-        <p>
-          Complete the form and click "calculate repayments" to see
-          what your monthly repayments would be.
-        </p>
-      </div>
-    
-      <div class="result-active" style="display: none;">
+      <div class="result-initial" style="display: none;">
+        <div class="image-hero">
+          <img src="/assets/images/illustration-empty.svg" alt="bills">
+        </div>
         <div class="text-container">
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click "calculate repayments" to see
+            what your monthly repayments would be.
+          </p>
+        </div>
+      </div>
+    
+      <div class="result-active-container">
+        <div class="text-container-active">
           <h2>Your results</h2>
           <p>
             Your results are shown below based on the information you provided.
@@ -83,15 +84,15 @@
           </p>
         </div>
     
-        <div class="main-result" style="display: none;">
+        <div class="main-result">
           <div class="monthly-result">
             <p>Your monthly repayments</p>
-            <span></span>
+            <span>1478</span>
           </div>
           <hr>
           <div class="repay-result">
             <p>Total you'll repay over the term</p>
-            <span></span>
+            <span>123456</span>
           </div>
         </div>
       </div>
