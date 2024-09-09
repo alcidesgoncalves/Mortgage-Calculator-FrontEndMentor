@@ -16,8 +16,7 @@
 
 form {
     min-height: 20rem;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 label {
@@ -32,19 +31,13 @@ label {
     padding: 1rem 0;
     width: 90%;
     margin: 0 auto;
-}
-
-.input-container {
-   margin-top: .75rem;  
-   display: flex;
-   align-items: center;
-   border: solid var(--Slate300) 1px;
+    border-radius: 0.25em;
 }
 
 .unit{
     background-color: var(--Slate100);
     color: var(--Slate500);
-    font-family:'Plus Jakarta Sans Bold', sans-serif; ;
+    font-family:'Plus Jakarta Sans Bold', sans-serif; 
     padding: 0.7em 1em;
     border-radius: 3px;
 }
@@ -54,41 +47,31 @@ label {
   border-radius: 0 0.25em 0.25em 0;
 }
 
-.input-container input {
-    padding: 1em;
-    width: 94%;
+.input-container {
+    display: flex;
+    align-items: center;
+    border: solid var(--Slate300) 1px;
+    margin-top: .75rem;  
+}
+
+.input-subcontainer{
+    width: 100%;
     border-radius: 2px;
     border: none; 
+    color: var(--Slate900);
+    font-weight: 900;
+    padding: .8em;
 }
 
-.mortgage-type-container {
-    width: 100%;
-    padding: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: .65rem;
-}
-
-.circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid #000000;
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-  outline: none;
-  display: inline-block;
-}
-
-.mortgage-type-btn {
-    background-color: var(--White);
-    border: solid 0.5px var(--Slate500);
-    padding: .65rem;
+.radio-container {
+    padding: 0.7em 0.6em;
     font-family:'Plus Jakarta Sans Bold', sans-serif; 
+    font-weight: 900;
 }
 
-.mortgage-type-btn span {
-    margin-right: .25rem;
+.input-container input[type="radio"] {
+    margin: 0;
+    width: 10%;
 }
 
 .button-container {

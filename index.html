@@ -20,14 +20,14 @@
           <label for="mortgage-amount">Mortgage Amount</label>
           <div class="input-container">
             <span class="unit">£</span>
-            <input type="number" id="mortgage-amount" name="mortgage-amount">
+            <input class="input-subcontainer" type="number" id="mortgage-amount" name="mortgage-amount">
           </div>
         </div>
 
         <div class="form-group">
           <label for="mortgage-term">Mortgage Term</label>
           <div class="input-container">
-            <input type="number" id="mortgage-term" name="mortgage-term">
+            <input class="input-subcontainer" type="number" id="mortgage-term" name="mortgage-term">
             <span class="unit term"">years</span>
           </div>
         </div>
@@ -35,23 +35,21 @@
         <div class="form-group">
           <label for="interest-rate">Interest Rate</label>
           <div class="input-container">
-            <input type="number" id="interest-rate" name="interest-rate">
+            <input class="input-subcontainer" type="number" id="interest-rate" name="interest-rate">
             <span class="unit rate">%</span>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="mortgage-type">Mortgage Type</label>
-          <div class="mortgage-type-container">
-            <a class="mortgage-type-btn">
-              <span class="circle"></span>
-              Repayment
-            </a>
-            <a class="mortgage-type-btn">
-              <span class="circle"></span>
-              Interest Only
-            </a>
+          <label>Mortgage Type</label>
+          <div class="input-container radio-container">
+            <input  type="radio" name="" id="">
+            <p>Repayment</p>
           </div>
+          <div class="input-container radio-container">
+            <input type="radio" name="" id="">
+            <p>Interest Only</p>
+          </div>          
         </div>
 
         <div class="button-container">
