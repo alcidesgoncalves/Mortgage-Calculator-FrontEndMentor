@@ -11,72 +11,78 @@
   <div class="container">  
     <div class="calculator-container">
       <div class="head-container">
-        <h2>Mortgage Calculator</h2>
-        <p>Clear all</p>
+        <h2 class="main-title">Mortgage Calculator</h2>
+        <p class="clear-btn">Clear All</p>
       </div>
 
       <form action="">
         <div class="form-group">
-            <label for="mortgage-amount">Mortgage Amount</label>
-            <span>£</span>
-            <input type="number" id="mortgage-amount" name="mortgage-amount">
+          <label for="mortgage-amount">Mortgage Amount</label>
+          <div class="input-container">
+            <span class="unit">£</span>
+            <input class="input-subcontainer" type="number" id="mortgage-amount" name="mortgage-amount">
+          </div>
         </div>
-    
-        <div class="form-group">
-            <label for="mortgage-term">Mortgage Term</label>
-            <input type="number" id="mortgage-term" name="mortgage-term">
-            <span>years</span>
-        </div>
-    
-        <div class="form-group">
-            <label for="interest-rate">Interest Rate</label>
-            <input type="number" id="interest-rate" name="interest-rate">
-            <span>%</span>
-        </div>
-    
-        <div class="form-group">
-            <label>Mortgage Type</label>
 
-            <label class="custom-radio">
-                <input type="radio" name="mortgage-type" >
-                <span class="checkmark"></span>
-                Repayment
-            </label>
-
-            <label class="custom-radio">
-                <input type="radio" name="interest-only">
-                <span class="checkmark"></span>
-                Interest Only
-            </label>
+        <div class="form-group">
+          <label for="mortgage-term">Mortgage Term</label>
+          <div class="input-container">
+            <input class="input-subcontainer" type="number" id="mortgage-term" name="mortgage-term">
+            <span class="unit term"">years</span>
+          </div>
         </div>
-    </form>
-    <button class="repayment-btn"> 
-      <img class="icon" src="assets/images/icon-calculator.svg" alt="calculator-icon">
-      Calculate Repayments
-    </button>
+
+        <div class="form-group">
+          <label for="interest-rate">Interest Rate</label>
+          <div class="input-container">
+            <input class="input-subcontainer" type="number" id="interest-rate" name="interest-rate">
+            <span class="unit rate">%</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Mortgage Type</label>
+          <div class="input-container radio-container">
+            <input  type="radio" name="" id="">
+            <p>Repayment</p>
+          </div>
+          <div class="input-container radio-container">
+            <input type="radio" name="" id="">
+            <p>Interest Only</p>
+          </div>          
+        </div>
+
+        <div class="button-container">
+          <button class="repayment-btn"> 
+            <img class="icon" src="assets/images/icon-calculator.svg" alt="calculator-icon">
+            Calculate Repayments
+          </button>
+        </div>
+      </form>
     </div>
-
     <div class="result-container">
       <div class="result-initial">
         <img src="/assets/images/illustration-empty.svg" alt="bills">
-        <div class="text-container">
-          <h2>Results shown here</h2>
-          <p>
-            Complete the form and click "calculate repayments" to see
-            what your monthly repayments would be.
-          </p>
-        </div>
       </div>
-
-      <div class="result-active">
+    
+      <div class="text-container">
+        <h2>Results shown here</h2>
+        <p>
+          Complete the form and click "calculate repayments" to see
+          what your monthly repayments would be.
+        </p>
+      </div>
+    
+      <div class="result-active" style="display: none;">
         <div class="text-container">
           <h2>Your results</h2>
           <p>
             Your results are shown below based on the information you provided.
-            to adjust the results, edit the form and click "calculate repayments"
+            To adjust the results, edit the form and click "calculate repayments"
             again.
           </p>
         </div>
+    
         <div class="main-result" style="display: none;">
           <div class="monthly-result">
             <p>Your monthly repayments</p>
@@ -89,7 +95,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
 </body>
 </html>
