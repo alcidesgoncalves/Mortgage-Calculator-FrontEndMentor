@@ -43,11 +43,11 @@
         <div class="form-group">
           <label>Mortgage Type</label>
           <label class="input-container radio-container">
-            <input class="radio-check" type="radio" name="mortgage-type" id="repayment">
+            <input class="radio-check" type="radio" name="mortgage-type" id="repayment" value="repay">
             <p>Repayment</p>
           </label>
           <label class="input-container radio-container">
-            <input class="radio-check" type="radio" name="mortgage-type" id="interest-only">
+            <input class="radio-check" type="radio" name="mortgage-type" id="interest-only" value="interest">
             <p>Interest Only</p>
           </label>          
         </div>
@@ -87,12 +87,12 @@
         <div class="main-result">
           <div class="monthly-result">
             <p>Your monthly repayments</p>
-            <span>1478</span>
+            <span id="mon-repayment">----</span>
           </div>
           <hr>
           <div class="repay-result">
             <p>Total you'll repay over the term</p>
-            <span>123456</span>
+            <span id="repay-term">123456</span>
           </div>
         </div>
       </div>
