@@ -2,6 +2,7 @@
 .image-hero {
     width: 50%;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 .text-container {
@@ -73,6 +74,10 @@
 .repay-result span {
     color: white;
     font-size: 2rem;
+}
+
+.hidden {
+    display: none;
 }
 
 hr {

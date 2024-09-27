@@ -3,6 +3,8 @@ const inputs = document.querySelectorAll('.input-subcontainer');
 const inputRadio = document.querySelectorAll('.radio-check');
 const buttonRepayment = document.querySelector('.button-container');
 const monthlyRepayment = document.getElementById('mon-repayment');
+const repayTerm = document.getElementById('repay-term');
+let isCalculated = false;
 
 clearButton.addEventListener('click', () => {
     inputs.forEach(input => {
@@ -14,6 +16,7 @@ clearButton.addEventListener('click', () => {
     }
     )
 });
+
 
 function areInputsValid() {
     const mortgageAmount = document.getElementById('mortgage-amount').value;
@@ -37,9 +40,21 @@ function calculate(mortgageAmount, mortgageTerm, mortgageRate, mortgageType) {
     if (mortgageType === "repay"){
         return amount * (rateMonthly * (1 + rateMonthly)**n) / ((1 + rateMonthly)**n - 1);
     } else if (mortgageType === "interest") {
-        console.log("Ainda não fiz");
+        return amount * rateMonthly;
     } else {
         throw new Error("Operação inválida");
+    }
+}
+
+function render() {
+    const resultDefaultContainer = document.querySelector('.result-initial'); 
+    const resultActiveContainer = document.querySelector('.result-active');
+    
+    if (!isCalculated) {
+        resultDefaultContainer.classList.remove("hidden");
+    } else {
+        resultDefaultContainer.classList.add("hidden");
+        resultActiveContainer.classList.remove("hidden");
     }
 }
 
@@ -55,6 +70,7 @@ function validateAndCalculate(e) {
         alert('Por favor, selecione uma operação.');
         return;
     }
+    isCalculated = true;
     const mortgageAmount = document.getElementById('mortgage-amount').value;
     const mortgageTerm = document.getElementById('mortgage-term').value;
     const mortgageRate = document.getElementById('interest-rate').value/100;
@@ -62,13 +78,19 @@ function validateAndCalculate(e) {
 
     try {
         const result = calculate(mortgageAmount, mortgageTerm, mortgageRate, mortgageType);
-        monthlyRepayment.textContent = Math.ceil(result)
+        monthlyRepayment.textContent = "£" + Math.ceil(result);
+        render();
+        if(mortgageType === "repay") {
+           return repayTerm.textContent = "£" + Math.ceil(result*(mortgageTerm*12))
+        } else {
+            return repayTerm.textContent = "£" + Math.ceil(((mortgageRate/12) * (mortgageTerm * 12)) + mortgageAmount);
+        }
+        
     } catch (error) {
-        console.log(error);
         alert("Ocorreu algum erro!");
+        console.log(error);
     }
     
 }
 
 buttonRepayment.addEventListener('click', validateAndCalculate);
-
