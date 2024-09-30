@@ -18,7 +18,6 @@ img {
 }
 
 .container {
-    background-color: violet;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,13 +26,40 @@ img {
 .calculator-container {
     background-color: var(--White);
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
 .result-container {
     background-color: var(--Slate900);
-    display: flex;
-    flex-direction: column;
     width: 100%;
     min-height: 50vh;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--White);
+        border-radius: 26px 16px 26px 26px;    
+    }
+
+    .calculator-container {
+        background-color: var(--White);
+        width: 100%;
+        border-radius: 26px 0 26px 26px;
+    }
+
+    .result-container {
+        padding: 4.7rem 0;
+        border-radius: 0px 16px 16px 64px;
+        width: 100%;
+    }
+    
 }

@@ -1,6 +1,9 @@
+.result-initial {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .image-hero {
-    width: 50%;
     margin: 0 auto;
     padding-top: 2rem;
 }
