@@ -17,22 +17,14 @@
 
 form {
     min-height: 20rem;
-    display: block;
+    padding: 0 1.5rem;
 }
 
-label {
+.input-label {
     color: var(--Slate700);
     font-family: 'Plus Jakarta Sans Medium', sans-serif;
     font-size: .95rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    width: 90%;
-    margin: 0 auto;
-    border-radius: 0.25em;
+    margin-top: .65rem;
 }
 
 .unit{
@@ -51,8 +43,10 @@ label {
 .input-container {
     display: flex;
     align-items: center;
-    border: solid var(--Slate300) 1px;
     margin-top: .75rem;  
+    border: solid var(--Slate300) 1px;
+    width: 100%;
+    border-radius: 0.25em
 }
 
 .input-subcontainer{
@@ -95,6 +89,52 @@ label {
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     padding: 0.65rem 1.65rem;
+    margin-top: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .head-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.55rem 1.25rem;
+    }
+
+    .clear-btn {
+        margin-right: 1em;
+    }
+
+    .mid-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    .mid-input > div {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .radio-container {
+        padding: 0.7em 0.1em;
+        font-family:'Plus Jakarta Sans Bold', sans-serif; 
+        font-weight: 900;
+    }
+    
+    .input-container input[type="radio"] {
+        margin: 0;
+        width: 10%;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+
+    .repayment-btn {
+        width: 70%;
+        margin: 1em 1.2em 0 0;
+    }
 }

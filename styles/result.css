@@ -88,3 +88,17 @@ hr {
     border-top: 1px solid var(--Slate500);
     margin: 1em 0;
 }
+
+@media (min-width: 768px) {
+    .result-initial {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;     /* Centraliza verticalmente */
+        min-height: 40vh;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

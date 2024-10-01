@@ -21,6 +21,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 850px;
 }
 
 .calculator-container {
@@ -46,20 +47,17 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: stretch;
         background-color: var(--White);
         border-radius: 26px 16px 26px 26px;    
     }
 
     .calculator-container {
-        background-color: var(--White);
-        width: 100%;
         border-radius: 26px 0 26px 26px;
     }
 
     .result-container {
-        padding: 4.7rem 0;
         border-radius: 0px 16px 16px 64px;
-        width: 100%;
     }
     
 }
